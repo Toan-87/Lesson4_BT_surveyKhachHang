@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lấy survey khách hàng</title>
+    <style>
+        .dropdown {
+            width: 350px
+        }
+        .radioBox {
+            align-self:center;
+            width:120px;
+        }
+    </style>
+</head>
+<body>
+<form action="">
+    <h3>Market Research Survey</h3>
+    <p>Please take a few moments to complete this satisfaction survey.</p>
+    <h4>What is your age range?</h4>
+    <select class="dropdown" name="age-range" id="age-range">
+        <option value="18-24">18-24</option>
+        <option value="25-34">25-34</option>
+        <option value="35-50">35-50</option>
+        <option value="50+">50+</option>
+    </select>
+    <h4>What is your yearly income range?</h4>
+    <select class="dropdown" name="income" id="income">
+        <option value="0-25k">$0 - $25,000</option>
+        <option value="25k-50k">$25,001 - $50,000</option>
+        <option value="50k-100k">$50,001 - $100,000</option>
+        <option value="100k+">$100,000+</option>
+    </select>
+    <h4>Gender Identity</h4>
+    <input type="radio" name="sex" value="Male" id="sex-male"><label for="sex-male"> Male </label><br>
+    <input type="radio" name="sex" value="Female" id="sex-female"><label for="sex-female"> female </label><br>
+    <input type="radio" name="sex" value="Nonbinary" id="sex-Nonbinary"><label for="sex-Nonbinary">
+    Nonbinary </label><br>
+    <input type="radio" name="sex" value="Other" id="sex-Other"><label for="sex-Other"> Other </label><br>
+    <h4>Which of the following products have your purchased in the last 2 months. Please check all that apply.</h4>
+    <input type="checkbox" value="Product 1" id="Product 1"><label for="Product 1"> Product 1 </label><br>
+    <input type="checkbox" value="Product 1" id="Product 2"><label for="Product 2"> Product 2 </label><br>
+    <input type="checkbox" value="Product 1" id="Product 3"><label for="Product 2"> Product 3 </label><br>
+    </select>
+    <h4>How often would you use our new product?</h4>
+    <input type="radio" name="time" value="Daily" id="Daily"><label for="Daily"> Daily </label><br>
+    <input type="radio" name="time" value="Weekly" id="Weekly"><label for="Weekly"> Weekly </label><br>
+    <input type="radio" name="time" value="Monthly" id="Monthly"><label for="Monthly"> Monthly </label><br>
+    <h4>What would you pay for the new product?</h4>
+    $x
+    <input type="number" name="dollar" style="width: 80px"/>
+    .
+    <input type="number" name="cent" style="width: 80px"/>
+    <br>
+    <pre>    Dollars      Cents</pre>
+    <h4>What features would you like to see in the new product.</h4>
+    <textarea name="desired-features" id="desired-features" cols="140" rows="6"></textarea>
+    <h5>Please rate your level of agreement with the following statements.</h5>
+    <table border="1">
+        <tr style="background-color: lightgray">
+            <th></th>
+            <th>Strongly Disagree</th>
+            <th>Disagree</th>
+            <th>Agree</th>
+            <th>Strongly Agree</th>
+        </tr>
+        <tr>
+            <td class="statementParagraph">Our products are priced fairly.</td>
+            <td><input type="radio" name="statement-1" value="S-Disagreed" class="radioBox"/></td>
+            <td><input type="radio" name="statement-1" value="Disagreed" class="radioBox"/></td>
+            <td><input type="radio" name="statement-1" value="Agreed" class="radioBox"/></td>
+            <td><input type="radio" name="statement-1" value="S-Agreed" class="radioBox"/></td>
+        </tr>
+        <tr style="background-color: lightgray">
+            <td class="statementParagraph">Our products are high quality.</td>
+            <td><input type="radio" name="statement-2" value="S-Disagreed" class="radioBox"/></td>
+            <td><input type="radio" name="statement-2" value="Disagreed" class="radioBox"/></td>
+            <td><input type="radio" name="statement-2" value="Agreed" class="radioBox"/></td>
+            <td><input type="radio" name="statement-2" value="S-Agreed" class="radioBox"/></td>
+        </tr>
+        <tr>
+            <td class="statementParagraph">You would recommend our product to a friend or coworker.</td>
+            <td><input type="radio" name="statement-3" value="S-Disagreed" class="radioBox"/></td>
+            <td><input type="radio" name="statement-3" value="Disagreed" class="radioBox"/></td>
+            <td><input type="radio" name="statement-3" value="Agreed" class="radioBox"/></td>
+            <td><input type="radio" name="statement-3" value="S-Agreed" class="radioBox"/></td>
+        </tr>
+    </table>
+    <input style=" font-size:120%;margin:20px 50px 10px 10px;" type="submit" value="Submit" class="button">
+</form>
+</body>
+</html>
